@@ -11,6 +11,7 @@ workpatterns_classify(
   signals = "email",
   start_hour = "0900",
   end_hour = "1700",
+  mingroup = 5,
   active_threshold = 0,
   method = "bw",
   return = "plot"
@@ -43,6 +44,9 @@ Note that this currently only supports \strong{hourly} increments.}
 \item{end_hour}{A character vector specifying starting hours, e.g. "1700".
 Note that this currently only supports \strong{hourly} increments.}
 
+\item{mingroup}{Numeric value setting the privacy threshold / minimum group
+size. Defaults to 5.}
+
 \item{active_threshold}{A numeric value specifying the minimum number of
 signals to be greater than in order to qualify as \emph{active}. Defaults to 0.
 Only applicable for the binary-week method.}
@@ -58,6 +62,7 @@ following strings:
 \item \code{"data"}
 \item \code{"table"}
 \item \code{"plot-area"}
+\item \code{"plot-hrvar"} (only for \code{bw} method)
 }
 
 See \code{Value} for more information.}
@@ -72,6 +77,9 @@ and archetypes (default)
 \item \code{"table"}: returns a summary table of the archetypes
 \item \code{"plot-area"}: returns an area plot of the percentages of archetypes
 shown over time
+\item \code{"plot-hrvar"}: returns a bar plot showing the count of archetypes,
+faceted by the supplied HR attribute. This is only available for the \code{bw}
+method.
 }
 }
 \description{
@@ -82,7 +90,15 @@ day. Uses a binary week-based ('bw') method by default, with options to use
 the the person-average volume-based ('pav') method.
 }
 \details{
-This is a wrapper around \code{workpatterns_classify_bw()} and
+The working patterns archetypes are a set of segments created based on the
+aggregated hourly activity of employees. A motivation of creating these
+archetypes is to capture the diversity in working patterns, where for
+instance employees may choose to take multiple or extended breaks throughout
+the day, or choose to start or end earlier/later than their standard working
+hours. Two methods have been developed to capture the different working
+patterns.
+
+This function is a wrapper around \code{workpatterns_classify_bw()} and
 \code{workpatterns_classify_pav()}, and calls each function depending on what is
 supplied to the \code{method} argument. Both methods implement a rule-based
 classification of either \strong{person-weeks} or \strong{persons} that pull apart
@@ -97,13 +113,19 @@ implementations.
 This method classifies each \strong{person-week} into one of the seven
 archetypes:
 \itemize{
-\item 0 < 3 hours on
-\item 1 Standard with breaks workday
-\item 2 Standard continuous workday
-\item 3 Standard flexible workday
-\item 4 Long flexible workday
-\item 5 Long continuous workday
-\item 6 Always on (13h+)
+\item \strong{0 < 3 hours on}: fewer than 3 hours of active hours
+\item \strong{1 Standard with breaks workday}: active for fewer than \emph{expected
+hours}, with no activity outside working hours
+\item \strong{2 Standard continuous workday}: number of active hours equal \emph{expected
+hours}, with no activity outside working hours
+\item \strong{3 Standard flexible workday}: number of active hours are less than or
+equal to \emph{expected hours}, with some activity outside working hours
+\item \strong{4 Long flexible workday}: number of active hours exceed \emph{expected
+hours}, with breaks occurring throughout
+\item \strong{5 Long continuous workday}: number of active hours exceed \emph{expected
+hours}, with activity happening in a continuous block (no breaks)
+\item \strong{6 Always on (13h+)}: number of active hours greater than or equal to
+13
 }
 
 This is the recommended method over \code{pav} for several reasons:
@@ -113,6 +135,17 @@ results towards the 'standard working hours'.
 \item It captures the intuition that each individual can have 'light' and
 'heavy' weeks with respect to workload.
 }
+
+In the standard plot output, the archetypes have been abbreviated to show the
+following:
+\itemize{
+\item \strong{Low Activity} - archetype 0
+\item \strong{Standard} - archetype 2
+\item \strong{Flexible} - archetypes 1 and 3
+\item \strong{Long continuous} - archetype 5
+\item \strong{Long flexible} - archetype 4
+\item \strong{Always On} - archetype 6
+}
 }
 
 \section{Person Average method}{
@@ -121,21 +154,31 @@ results towards the 'standard working hours'.
 This method classifies each \strong{person} (based on unique \code{PersonId}) into
 one of the six archetypes:
 \itemize{
-\item Absent
-\item Extended Hours - Morning
-\item Extended Hours - Evening
-\item Overnight workers
-\item Standard Hours
-\item Always On
+\item \strong{Absent}: Fewer than 10 signals over the week.
+\item \strong{Extended Hours - Morning:} 15\%+ of collaboration before start hours and
+less than 70\% within standard hours, and less than 15\% of collaboration after
+end hours
+\item \strong{Extended Hours - Evening}: Less than 15\% of collaboration before start
+hours and less than 70\% within standard hours, and 15\%+ of collaboration
+after end hours
+\item \strong{Overnight workers}: less than 30\% of collaboration happens within
+standard hours
+\item \strong{Standard Hours}: over 70\% of collaboration within standard hours
+\item \strong{Always On}: over 15\% of collaboration happens before starting hour and
+end hour (both conditions must satisfy) and less than 70\% of collaboration
+within standard hours
 }
 }
 
 \section{Flexibility Index}{
  The Working Patterns archetypes as calculated
 using the binary-week method shares many similarities with the Flexibility
-Index (see \code{flex_index()}): - Both are computed directly from the Hourly
-Collaboration Flexible Query. - Both apply the same binary conversion of
-activity on the signals from the Hourly Collaboration Flexible Query.
+Index (see \code{flex_index()}):
+\itemize{
+\item Both are computed directly from the Hourly Collaboration Flexible Query.
+\item Both apply the same binary conversion of activity on the signals from the
+Hourly Collaboration Flexible Query.
+}
 }
 
 \examples{
@@ -173,6 +216,13 @@ Other Working Patterns:
 \code{\link{workpatterns_hclust}()},
 \code{\link{workpatterns_rank}()},
 \code{\link{workpatterns_report}()}
+}
+\author{
+Ainize Cidoncha \href{mailto:ainize.cidoncha@microsoft.com}{ainize.cidoncha@microsoft.com}
+
+Carlos Morales Torrado \href{mailto:carlos.morales@microsoft.com}{carlos.morales@microsoft.com}
+
+Martin Chan \href{mailto:martin.chan@microsoft.com}{martin.chan@microsoft.com}
 }
 \concept{Clustering}
 \concept{Working Patterns}

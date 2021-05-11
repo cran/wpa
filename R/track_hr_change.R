@@ -9,12 +9,14 @@
 #' @description
 #' Creates a list of everyone at a specified start date and a specified end date
 #' then aggregates up people who have moved between orgs between this to points
-#' of time and visualiazes the move through a sankey chart.
+#' of time and visualizes the move through a sankey chart.
 #' Through this chart you can see:
 #' -  The HR attribute/orgs that have the highest move out
 #' -  The HR attribute/orgs that have the highest move in
 #' -  The number of people that do not have that HR attribute ot  they are no
 #' longer in the system
+#'
+#' @author Tannaz Sattari Tabrizi <Tannaz.Sattari@@microsoft.com>
 #'
 #' @param data A Person Query dataset in the form of a data frame.
 #' @param start_date A start date to compare changes. See `end_date`.

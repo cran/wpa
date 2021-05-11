@@ -100,6 +100,7 @@ Other Visualization:
 \code{\link{external_network_plot}()},
 \code{\link{hr_trend}()},
 \code{\link{hrvar_count}()},
+\code{\link{hrvar_trend}()},
 \code{\link{internal_network_plot}()},
 \code{\link{keymetrics_scan}()},
 \code{\link{meeting_dist}()},
@@ -154,6 +155,9 @@ Other Flexible:
 \code{\link{create_scatter}()},
 \code{\link{create_stacked}()},
 \code{\link{create_trend}()}
+}
+\author{
+Mark Powers \href{mailto:mark.powers@microsoft.com}{mark.powers@microsoft.com}
 }
 \concept{Flexible}
 \concept{Flexible Input}

@@ -7,7 +7,7 @@
 create_rank(
   data,
   metric,
-  hrvar = extract_hr(data),
+  hrvar = extract_hr(data, exclude_constants = TRUE),
   mingroup = 5,
   return = "table",
   mode = "simple",
@@ -137,6 +137,7 @@ Other Visualization:
 \code{\link{external_network_plot}()},
 \code{\link{hr_trend}()},
 \code{\link{hrvar_count}()},
+\code{\link{hrvar_trend}()},
 \code{\link{internal_network_plot}()},
 \code{\link{keymetrics_scan}()},
 \code{\link{meeting_dist}()},
@@ -185,6 +186,11 @@ Other Flexible:
 \code{\link{create_stacked}()},
 \code{\link{create_trend}()},
 \code{\link{period_change}()}
+}
+\author{
+Carlos Morales Torrado \href{mailto:carlos.morales@microsoft.com}{carlos.morales@microsoft.com}
+
+Martin Chan \href{mailto:martin.chan@microsoft.com}{martin.chan@microsoft.com}
 }
 \concept{Flexible}
 \concept{Visualization}

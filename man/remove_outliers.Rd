@@ -49,6 +49,7 @@ Other Data Validation:
 \code{\link{hr_trend}()},
 \code{\link{hrvar_count_all}()},
 \code{\link{hrvar_count}()},
+\code{\link{hrvar_trend}()},
 \code{\link{identify_churn}()},
 \code{\link{identify_holidayweeks}()},
 \code{\link{identify_inactiveweeks}()},
@@ -64,5 +65,8 @@ Other Data Validation:
 \code{\link{subject_validate}()},
 \code{\link{track_HR_change}()},
 \code{\link{validation_report}()}
+}
+\author{
+Mark Powers \href{mailto:mark.powers@microsoft.com}{mark.powers@microsoft.com}
 }
 \concept{Data Validation}

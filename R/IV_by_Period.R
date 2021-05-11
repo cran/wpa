@@ -12,9 +12,11 @@
 #' This function uses the Information Value algorithm to predict
 #' which Workplace Analytics metrics are most explained by the change in dates.
 #'
+#' @author Mark Powers <mark.powers@@microsoft.com>
+#'
 #' @param data Person Query as a dataframe including date column named "Date"
 #'   This function assumes the data format is `MM/DD/YYYY` as is standard in a
-#'   WpA query output.
+#'   Workplace Analytics query output.
 #' @param before_start Start date of "before" time period in `YYYY-MM-DD`.
 #'   Defaults to earliest date in dataset.
 #' @param before_end End date of "before" time period in `YYYY-MM-DD`

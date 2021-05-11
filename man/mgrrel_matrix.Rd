@@ -125,6 +125,7 @@ Other Visualization:
 \code{\link{external_network_plot}()},
 \code{\link{hr_trend}()},
 \code{\link{hrvar_count}()},
+\code{\link{hrvar_trend}()},
 \code{\link{internal_network_plot}()},
 \code{\link{keymetrics_scan}()},
 \code{\link{meeting_dist}()},
@@ -165,6 +166,9 @@ Other Managerial Relations:
 \code{\link{one2one_rank}()},
 \code{\link{one2one_sum}()},
 \code{\link{one2one_trend}()}
+}
+\author{
+Lucas Hogner \href{mailto:lucas.hogner@microsoft.com}{lucas.hogner@microsoft.com}
 }
 \concept{Managerial Relations}
 \concept{Visualization}
