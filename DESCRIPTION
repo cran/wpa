@@ -1,7 +1,7 @@
 Package: wpa
 Type: Package
 Title: Tools for Analysing and Visualising Workplace Analytics Data
-Version: 1.5.0
+Version: 1.6.0
 Authors@R: c(
     person(given = "Martin", family = "Chan", role = c("aut", "cre"), email = "martin.chan@microsoft.com"),
     person(given = "Carlos", family = "Morales", role = "aut", email = "carlos.morales@microsoft.com"),
@@ -12,6 +12,7 @@ Authors@R: c(
     person(given = "Lucas", family = "Hogner", role = "ctb", email = "lucas.hogner@microsoft.com"),
     person(given = "Jasminder", family = "Thind", role = "ctb", email = "jasminder.thind@microsoft.com"),
     person(given = "Simone", family = "Liebal", role = "ctb", email = "simone.liebal@microsoft.com"),
+	person(given = "Aleksey", family = "Ashikhmin", role = "ctb", email = "alashi@microsoft.com"),
     person(given = "Ellen", family = "Trinklein", role = "ctb"),
     person(given = "Microsoft Corporation", role = "cph")
 	)
@@ -36,10 +37,11 @@ Imports: dplyr, stats, utils, tidyr, tidyselect (>= 1.0.0), magrittr,
         ggwordcloud, methods, data.table
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
-Suggests: knitr, extrafont, leiden, lifecycle, fst, glue
+Suggests: knitr, extrafont, leiden, lifecycle, fst, glue,
+        flexdashboard, lmtest, portes, sandwich
 Language: en-US
 NeedsCompilation: no
-Packaged: 2021-05-10 22:26:16 UTC; martinchan
+Packaged: 2021-07-06 09:02:32 UTC; martinchan
 Author: Martin Chan [aut, cre],
   Carlos Morales [aut],
   Mark Powers [ctb],
@@ -49,8 +51,9 @@ Author: Martin Chan [aut, cre],
   Lucas Hogner [ctb],
   Jasminder Thind [ctb],
   Simone Liebal [ctb],
+  Aleksey Ashikhmin [ctb],
   Ellen Trinklein [ctb],
   Microsoft Corporation [cph]
 Maintainer: Martin Chan <martin.chan@microsoft.com>
 Repository: CRAN
-Date/Publication: 2021-05-11 04:20:02 UTC
+Date/Publication: 2021-07-06 09:30:02 UTC
