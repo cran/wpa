@@ -1,7 +1,7 @@
 Package: wpa
 Type: Package
 Title: Tools for Analysing and Visualising Workplace Analytics Data
-Version: 1.6.2
+Version: 1.6.3
 Authors@R: c(
     person(given = "Martin", family = "Chan", role = c("aut", "cre"), email = "martin.chan@microsoft.com"),
     person(given = "Carlos", family = "Morales", role = "aut", email = "carlos.morales@microsoft.com"),
@@ -40,7 +40,7 @@ Suggests: knitr, extrafont, leiden, lifecycle, fst, glue,
         flexdashboard, lmtest, portes, sandwich
 Language: en-US
 NeedsCompilation: no
-Packaged: 2021-10-15 14:15:46 UTC; martinchan
+Packaged: 2021-11-21 00:13:47 UTC; martinchan
 Author: Martin Chan [aut, cre],
   Carlos Morales [aut],
   Mark Powers [ctb],
@@ -55,4 +55,4 @@ Author: Martin Chan [aut, cre],
   Microsoft Corporation [cph]
 Maintainer: Martin Chan <martin.chan@microsoft.com>
 Repository: CRAN
-Date/Publication: 2021-10-15 14:50:02 UTC
+Date/Publication: 2021-11-21 05:30:02 UTC
