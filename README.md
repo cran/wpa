@@ -1,7 +1,6 @@
 # wpa <img src="https://raw.githubusercontent.com/microsoft/wpa/main/man/figures/logo2.png" align="right" width=15% />
 
   [![R build status](https://github.com/microsoft/wpa/workflows/R-CMD-check/badge.svg)](https://github.com/microsoft/wpa/actions/)
-  [![CodeFactor](https://www.codefactor.io/repository/github/microsoft/wpa/badge/)](https://www.codefactor.io/repository/github/microsoft/wpa/)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT/)
   [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html)
   [![CRAN status](https://www.r-pkg.org/badges/version/wpa)](https://CRAN.R-project.org/package=wpa/)
@@ -9,7 +8,7 @@
 
 ## Analyze and Visualize Viva Leader Insights data
 
-This is an R package for analyzing and visualizing data from [Microsoft Viva Advanced Insights](https://docs.microsoft.com/en-us/workplace-analytics/) (previously Microsoft Workplace Analytics). 
+This is an R package for analyzing and visualizing data from [Microsoft Workplace Analytics](https://docs.microsoft.com/en-us/workplace-analytics/). For analyzing data from [Microsoft Viva Insights](https://analysis.insights.viva.office.com/), please see our other package [**vivainsights**](https://microsoft.github.io/vivainsights/). 
 
 ## With the **wpa** package, you can...
 
