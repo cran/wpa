@@ -1,7 +1,7 @@
-ba6c5864c045fc854aae02471b91293a *DESCRIPTION
+5aef78a95c619c6754645e0e22578cec *DESCRIPTION
 d5b3b03ec59b600433846f6e6661e41e *LICENSE
 67bf4bbe495a98511e093e8dc67a88ff *NAMESPACE
-79aa9a5d249f7910bdf3d225f5564877 *NEWS.md
+66c00aae5b54fa9f60dcc663b41e95a8 *NEWS.md
 0ad656c71a23cf141e99877f27f83be3 *R/IV_by_Period.R
 b33211db42a4ada40e12de6c2e53d354 *R/IV_report.R
 1896edbb1be5080a8bf5bbf2ce496131 *R/Ljungbox.R
@@ -28,7 +28,7 @@ d1c78bd9e7285e992e62a267270bf623 *R/collaboration_line.R
 83a3ed65188c3ada6703707fcaf2ebc7 *R/connectivity_report.R
 33c3e6104519cd6cf8154682b21c9d98 *R/copy_df.R
 a6c5bb3d3b9df294164e82b2b73e9ab0 *R/create_ITSA.R
-b221dc5a2395c2499e71a955b7a8ce61 *R/create_IV.R
+725d8bca32907add8e19c90b703baa1a *R/create_IV.R
 ee154d91d61ab170800ac9c49857e96f *R/create_bar.R
 5029a6ea10b607ed4860761ee15b58c4 *R/create_bar_asis.R
 251ed96460639fb9597939a577c467ce *R/create_boxplot.R
@@ -77,7 +77,7 @@ e06700cc7a89aca439c930cad3cd1ea7 *R/generate_report2.R
 81be886e356892c2e9f4c2c8de05af24 *R/heat_colours.R
 2085a474e599132907004911a9a53be6 *R/hr_trend.R
 dbb0aa5e33806b6b25db0417c7bfefbf *R/hrvar_count.R
-93f7f0386dffac201f05f53ab9ae20f5 *R/hrvar_count_all.R
+637558505f3f68828d7fbd49e6b66b38 *R/hrvar_count_all.R
 917a14cc5293b250ea1cb4d2aaeda4c7 *R/hrvar_trend.R
 3ee69336b27129a860022e7ec19fa3d2 *R/identify_churn.R
 551f2a586517b1fc2142c58fc232bd07 *R/identify_datefreq.R
@@ -153,7 +153,7 @@ f3f87d03b5841f27c63ac73074096606 *R/totals_reorder.R
 d74eb17b7c4e3ad4fcb4fe17ab19e767 *R/tstamp.R
 06a140dd7251f4113dcd2f654f3aebdd *R/us_to_space.R
 05c0d84e116fe9aff87a574342ca7225 *R/utils-pipe.R
-bc133cdbffd61479c8e01dcba6309758 *R/validation_report.R
+1894231965c2f7bba19530e29367d161 *R/validation_report.R
 403b39345c563661df4c9bbfd57ef698 *R/wellbeing_report.R
 563bb26a2e01c0d0ee7c294e6e0000de *R/workloads_dist.R
 4a3b4730aa630605e2d0284fa141bce3 *R/workloads_fizz.R
@@ -169,7 +169,7 @@ cb693bc2ace9fc2c1aec58993ba605c4 *R/workpatterns_classify_bw.R
 365e4c73eb7e06d73c7213fc7bdfc942 *R/workpatterns_rank.R
 bf63754a34c6b1159cc844accb6291cb *R/workpatterns_report.R
 45b6aaa5627c33bebe34c71b085ae356 *R/wrap.R
-ac826a2a1b434e1be4a4ea3739fa7c82 *README.md
+be72a02362ad6c67e6f85b3af31605d8 *README.md
 1539495468106dcf0f1f3c49706435c1 *data/dv_data.rda
 52fbf1ae88bbbb5414e9ee41bd0f6bfd *data/em_data.rda
 59e29cd557cb0a995e098a0e33ce598c *data/g2g_data.rda
@@ -261,7 +261,7 @@ f72e9f8bb4bcb0d93c2151386ce772a1 *man/collaboration_fizz.Rd
 6f53d5503689936a0e05c4b71b495c3e *man/connectivity_report.Rd
 857662ea7b9c9ca7db29ee9f638d3d62 *man/copy_df.Rd
 92c599331a398db1b8100ec58484f1e4 *man/create_ITSA.Rd
-38278bf5bc6255e7d4a8d41f322b3bd4 *man/create_IV.Rd
+ea37a5920bdd26658e2d13672ca828e5 *man/create_IV.Rd
 dd35450303f9251464fcfea0969d767d *man/create_bar.Rd
 a1541766a180c108e6703f513b9a7953 *man/create_bar_asis.Rd
 08124aad0d1bf2a5640bfc33d64c4d8c *man/create_boxplot.Rd
@@ -311,7 +311,7 @@ a7f8e13e924aa8bf351bd26013cebaf9 *man/generate_report.Rd
 02eca91135da46e0db30a3f362ec8455 *man/heat_colours.Rd
 38d86f309568e8958d6e838d87e378ed *man/hr_trend.Rd
 e93ea0a31448920a1a6d364e4d6ab5ff *man/hrvar_count.Rd
-f284f0fe6154b5389808b867db470fba *man/hrvar_count_all.Rd
+ed1e45cccee776bc071e78c09d9e9f02 *man/hrvar_count_all.Rd
 891aec576dda009b30302522e929f688 *man/hrvar_trend.Rd
 13d50c37779d6c410b17ece39dbb4510 *man/identify_churn.Rd
 394693c3a0a5bc86abab9153fa090258 *man/identify_datefreq.Rd
@@ -380,7 +380,7 @@ b12400546e38088fc64d1a813c852101 *man/rgb2hex.Rd
 3d8e0c4d9ca116f17d11469758e5d174 *man/subject_scan.Rd
 bbf8b6563791e4708c009bb7fd4a78d7 *man/subject_validate.Rd
 bfe903600ec657be73ffc42402ac12e5 *man/subject_validate_report.Rd
-5f98e685ae091fa910a31f5f73c0fd60 *man/theme_wpa.Rd
+d7a2446362d4b26e44463385956db742 *man/theme_wpa.Rd
 178d5cffd57511f99d1ba460913aac9b *man/theme_wpa_basic.Rd
 ae2ed1f0cd170510a89361e521890862 *man/tm_clean.Rd
 7c35ab2f2a34580053c6451a8cac02e3 *man/tm_cooc.Rd
@@ -392,7 +392,7 @@ cb911e637a9f323bf0e0a370aa54a005 *man/totals_reorder.Rd
 392b83cf51903c34abd8d62a970fb138 *man/track_HR_change.Rd
 c44284f6880edf21fcb73128e0679b8f *man/tstamp.Rd
 556c9acf021e44f9827ee672d32a4db7 *man/us_to_space.Rd
-400df27f028597f9a703f5f2fdab5e78 *man/validation_report.Rd
+86fcab9ca5efaca1c6c8802ca51e4fda *man/validation_report.Rd
 d678917590fe70395a9358bd1c6f153f *man/wellbeing_report.Rd
 1cdfd312b853fee4ac49529f132e755a *man/workloads_dist.Rd
 1caeef7fe228402b0a154cc5b78d70e0 *man/workloads_fizz.Rd
@@ -410,5 +410,7 @@ d4a47d102027dd6350732242498dd7cc *man/workpatterns_report.Rd
 1bd543f3378a901a08fb7da9507c1984 *man/wrap.Rd
 59851aa9d5e21dd82835d2dc3a6a4bc4 *man/wrap_text.Rd
 754a98c59c1122449d22f7eb27a6b321 *tests/testthat.R
+c68ea95cb64df043eeb20d4618584ff2 *tests/testthat/test-create_IV.R
 4d547488fd36f3a53df6471ce49d8307 *tests/testthat/test-flex_index.R
+234c1805f8db2d7ae39b457907240e4e *tests/testthat/test-hrvar_count_all.R
 2c80d5cec6ff4ec78b355d2855c05e3f *tests/testthat/test-workpatterns_classify.R
