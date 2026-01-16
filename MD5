@@ -1,7 +1,7 @@
-8384da7874a9b48bf0f2f13c4ccaa13d *DESCRIPTION
+150aad3111cac670ef76705dcc57b5cf *DESCRIPTION
 d5b3b03ec59b600433846f6e6661e41e *LICENSE
 67bf4bbe495a98511e093e8dc67a88ff *NAMESPACE
-2df91b4e7ea82a20f4d1b7df0be8ba34 *NEWS.md
+723f064636eabc6dd02e013a3fe4148c *NEWS.md
 0ad656c71a23cf141e99877f27f83be3 *R/IV_by_Period.R
 b33211db42a4ada40e12de6c2e53d354 *R/IV_report.R
 1896edbb1be5080a8bf5bbf2ce496131 *R/Ljungbox.R
@@ -12,7 +12,7 @@ e8c19d94c048b3718a9948dc1925c50c *R/afterhours_fizz.R
 8f70cf1a2d67a3ac42f2ffccb372eddf *R/afterhours_summary.R
 b873672a56cc2295ab71e78067ef37df *R/afterhours_trend.R
 b70e32a19074d08fef096cf8f88dc92b *R/anonymise.R
-52cc662b6687b62fc13c9b0f04d81325 *R/calculate_IV.R
+3560e2cd7335b89193dac8365a792a12 *R/calculate_IV.R
 b50621ded99a11e7fb230c01d02ec2f0 *R/capacity_report.R
 53a6124181ea91fc0873bda84fd9a17c *R/check_query.R
 0187efd48cb6f6c3c19e99840afac47f *R/coaching_report.R
@@ -73,7 +73,7 @@ f545ffa01edfec1f64cd872a058a91a1 *R/flex_index.R
 070d41327505634dd01d3884574d77ff *R/g2g_data.R
 0734764e72d91fe559d843f1bcde21ee *R/generate_report.R
 e06700cc7a89aca439c930cad3cd1ea7 *R/generate_report2.R
-176d959bc2beca554c2158bffca8c31d *R/globals.R
+4fbad66b667af10776fe2f172dd0a3c8 *R/globals.R
 81be886e356892c2e9f4c2c8de05af24 *R/heat_colours.R
 2085a474e599132907004911a9a53be6 *R/hr_trend.R
 dbb0aa5e33806b6b25db0417c7bfefbf *R/hrvar_count.R
@@ -169,7 +169,7 @@ cb693bc2ace9fc2c1aec58993ba605c4 *R/workpatterns_classify_bw.R
 365e4c73eb7e06d73c7213fc7bdfc942 *R/workpatterns_rank.R
 bf63754a34c6b1159cc844accb6291cb *R/workpatterns_report.R
 45b6aaa5627c33bebe34c71b085ae356 *R/wrap.R
-be72a02362ad6c67e6f85b3af31605d8 *README.md
+c4a47e099102325f44db3f103e17551d *README.md
 1539495468106dcf0f1f3c49706435c1 *data/dv_data.rda
 52fbf1ae88bbbb5414e9ee41bd0f6bfd *data/em_data.rda
 59e29cd557cb0a995e098a0e33ce598c *data/g2g_data.rda

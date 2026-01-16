@@ -1,7 +1,7 @@
 Package: wpa
 Type: Package
 Title: Tools for Analysing and Visualising Viva Insights Data
-Version: 1.10.0
+Version: 1.10.1
 Authors@R: c(
     person(given = "Martin", family = "Chan", role = c("aut", "cre"), email = "martin.chan@microsoft.com"),
     person(given = "Carlos", family = "Morales", role = "aut", email = "carlos.morales@microsoft.com"),
@@ -42,7 +42,7 @@ Suggests: knitr, extrafont, lifecycle, fst, glue, flexdashboard,
 Language: en-US
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2025-08-26 11:36:41 UTC; martinchan
+Packaged: 2026-01-16 16:51:05 UTC; martinchan
 Author: Martin Chan [aut, cre],
   Carlos Morales [aut],
   Mark Powers [ctb],
@@ -57,4 +57,4 @@ Author: Martin Chan [aut, cre],
   Microsoft Corporation [cph]
 Maintainer: Martin Chan <martin.chan@microsoft.com>
 Repository: CRAN
-Date/Publication: 2025-08-26 12:20:02 UTC
+Date/Publication: 2026-01-16 18:00:02 UTC
